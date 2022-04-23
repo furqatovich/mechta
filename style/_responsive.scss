@@ -1,0 +1,47 @@
+$main__color: #148E3C;
+$text__color: #E7EA09;
+
+@media (max-width: 1200px){
+    .moto{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+    .nav__link{
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        left: -100%;
+        background-color: rgba($color: $main__color, $alpha: .5);
+        backdrop-filter: blur(10px);
+        width: 70% !important;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        padding: 50px 0;
+        flex-direction: column;
+        transition: 1s ease;
+        li{
+            font-size: 20px;
+            a{
+                color: #fff !important;
+                padding: 10px 20px;
+                transition: 0.5s ease;
+            }
+        }
+        li:hover a{
+            background-color: #fff;
+            color: $main__color !important;
+        }
+    }
+    .advantages{
+        &__img{
+            top: 470px;
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
