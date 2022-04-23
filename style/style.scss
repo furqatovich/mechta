@@ -350,10 +350,11 @@ $text__color: #E7EA09;
 // Video
 
 .video {
-    width: 90%;
+    width: 100%;
     height: auto;
     margin: 100px auto;
     h1{
+        margin-left: 100px;
         font-weight: 700;
         font-size: 45px;
         font-family: "Roboto__Medium";
@@ -362,6 +363,7 @@ $text__color: #E7EA09;
     &__options {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
         .video__card {
             width: 800px;
             height: 370px;
@@ -380,16 +382,16 @@ $text__color: #E7EA09;
                 border-radius: 50%;
                 margin: auto;
                 top: 140px;
-                left: 250px;
+                left: 350px;
                 transition: .5s ease;
             }
             span:nth-child(2){
                 position: absolute;
-                border-bottom: 55px solid #fff;
-                border-left: 25px solid transparent;
-                border-right: 25px solid transparent;
-                top: 155px;
-                left: 273px;
+                border-bottom: 40px solid #fff;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                top: 162px;
+                left: 378px;
                 transform: rotate(90deg);
                 transition: .5s ease;
             }
@@ -407,9 +409,9 @@ $text__color: #E7EA09;
                 background-color: $main__color;
             }
             span:nth-child(2){
-                border-bottom: 55px solid $text__color;
-                border-left: 25px solid transparent;
-                border-right: 25px solid transparent;
+                border-bottom: 40px solid $text__color;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
             }
         }
     }
